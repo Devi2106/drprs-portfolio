@@ -13,6 +13,15 @@ import Publications from './components/Publications';
 import Media from './components/Media';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import { Routes, Route } from 'react-router-dom';
+import RegenerativeMedicine from './pages/RegenerativeMedicine';
+import BiomedicalDeviceEngineering from './pages/BiomedicalDeviceEngineering';
+import AIDeepLearning from './pages/AIDeepLearning';
+import IntegrativeMedicine from './pages/IntegrativeMedicine';
+
+
+
+
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,27 +34,60 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  return (
-    <div className="bg-black text-white">
-      <Navigation scrolled={scrolled} />
+ return (
+  <Routes>
 
-      {/* Offset for fixed navbar */}
-      <div className="pt-20">
-        <Hero />
-        <About />
-        <Innovation />
-        <Vision />
-        <FounderOf />
-        <Thoughts/>   {/* 🔥 THIS WAS MISSING */}
-        <Experience />
-        <Awards />
-        <Publications />
-        <Media />
-        <Gallery />
-        <Contact />
-      </div>
-    </div>
-  );
+    {/* HOME PAGE */}
+    <Route
+      path="/"
+      element={
+        <div className="bg-black text-white">
+          <Navigation scrolled={scrolled} />
+
+          <div className="pt-20">
+            <Hero />
+            <About />
+            <Innovation />
+            <Vision />
+            <FounderOf />
+            <Thoughts />
+            <Experience />
+            <Awards />
+            <Publications />
+            <Media />
+            <Gallery />
+            <Contact />
+          </div>
+        </div>
+      }
+    />
+
+    {/* NEW PAGE */}
+    <Route
+      path="/regenerative-medicine"
+      element={<RegenerativeMedicine />}
+    />
+     {/* BIOMEDICAL DEVICE ENGINEERING PAGE */}
+      <Route
+        path="/biomedical-device-engineering"
+        element={<BiomedicalDeviceEngineering />}
+      />
+
+<Route
+  path="/ai-deep-learning"
+  element={<AIDeepLearning />}
+/>
+
+      <Route
+  path="/integrative-medicine"
+  element={<IntegrativeMedicine />}
+/>
+      
+
+  </Routes>
+);
+
+
 }
 
 export default App;

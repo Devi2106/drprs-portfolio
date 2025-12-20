@@ -1,4 +1,4 @@
-import { Sparkles, Leaf, Cpu } from 'lucide-react';
+{/*import { Sparkles, Leaf, Cpu } from 'lucide-react';*/}
 
 export default function FounderOf() {
   return (
@@ -19,7 +19,7 @@ export default function FounderOf() {
 
         {/* Cards */}
         <div className="grid lg:grid-cols-3 gap-8">
-              {/* NOVADIGM */}
+              {/* SGP */}
          <div className="group relative bg-gradient-to-br from-gray-900 to-black 
 border border-[#19B5D8]/30 rounded-3xl p-10
 transition-all duration-500 hover:-translate-y-2
@@ -37,14 +37,14 @@ hover:shadow-[0_0_60px_rgba(25,181,216,0.45)]">
           </div>
 
        
-            {/* NOVADIGM */}
+            {/* SGP Manufacturing */}
           <div className="group relative bg-gradient-to-br from-gray-900 to-black 
           border border-amber-500/30 rounded-3xl p-10
           transition-all duration-500 hover:-translate-y-2
           hover:shadow-[0_0_60px_rgba(255,191,36,0.35)]">
 
             <img
-              src="/SGPlogo.png"
+              src="/SGP-Manufacturing-logo.png"
               alt="Novadigm Logo"
               className="h-16 w-auto mb-4 object-contain"
             />
@@ -62,7 +62,7 @@ transition-all duration-500 hover:-translate-y-2
 hover:shadow-[0_0_60px_rgba(25,181,216,0.45)]">
 
             <img
-              src="/SGPlogo.png"
+              src="/SGP-Research-logo.png"
               alt="Novadigm Logo"
               className="h-16 w-auto mb-4 object-contain"
             />

@@ -27,7 +27,7 @@ export default function Innovation() {
   return (
     <section
       id="innovation"
-      className="relative py-20 bg-gradient-to-b from-black via-blue-950 to-black overflow-hidden"
+      className="relative py-10 bg-gradient-to-b from-black via-blue-950 to-black overflow-hidden"
     >
       {/* Glow Background */}
       <div className="absolute inset-0 opacity-20">

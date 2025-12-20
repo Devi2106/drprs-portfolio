@@ -12,6 +12,8 @@ export default function Navigation({ scrolled }: NavigationProps) {
     { name: 'About', href: '#about' },
     { name: 'Innovation', href: '#innovation' },
     { name: 'Vision', href: '#vision' },
+    { name: 'Founder', href: '#founder' }, 
+    { name: 'Thoughts', href: '#thoughts' },
     { name: 'Experience', href: '#experience' },
     { name: 'Awards', href: '#awards' },
     { name: 'Publications', href: '#publications' },
@@ -38,7 +40,7 @@ export default function Navigation({ scrolled }: NavigationProps) {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center ml-24 space-x-8">
+          <div className="hidden md:flex items-center ml- +2 space-x-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}

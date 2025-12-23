@@ -59,24 +59,14 @@ export default function Hero(): JSX.Element {
           {/* Stats Row */}
           <div className="flex flex-wrap gap-3 pt-1">
             <button onClick={goToPatents}>
-              <div className="bg-white/5 border border-amber-400/30 rounded-xl px-6 py-3 min-w-[110px]">
-                <div className="text-2xl md:text-3xl font-bold text-amber-400">
-                  40+
-                </div>
-                <div className="text-gray-400 text-sm md:text-base">Patents</div>
-              </div>
-            </button>
+  <div className="bg-white/5 border border-amber-400/40 rounded-xl px-6 py-3 min-w-[100px] 
+                  shadow-md shadow-amber-400/50 hover:shadow-lg hover:shadow-amber-400/70 transition-all duration-300">
+    <div className="text-2xl font-bold text-amber-400">40+</div>
+    <div className="text-gray-400 text-sm">Patents</div>
+  </div>
+</button>
 
-            <button onClick={goToPublication}>
-              <div className="bg-white/5 border border-amber-400/30 rounded-xl px-6 py-3 min-w-[110px]">
-                <div className="text-2xl md:text-3xl font-bold text-amber-400">
-                  60+
-                </div>
-                <div className="text-gray-400 text-sm md:text-base">
-                  Publications
-                </div>
-              </div>
-            </button>
+           
 
             <div className="bg-white/5 border border-amber-400/30 rounded-xl px-6 py-3 min-w-[110px]">
               <div className="text-2xl md:text-3xl font-bold text-amber-400">
@@ -84,6 +74,15 @@ export default function Hero(): JSX.Element {
               </div>
               <div className="text-gray-400 text-sm md:text-base">Years Research</div>
             </div>
+
+           <button onClick={goToPublication}>
+  <div className="bg-white/5 border border-amber-400/40 rounded-xl px-6 py-3 min-w-[100px] 
+                  shadow-md shadow-amber-400/50 hover:shadow-lg hover:shadow-amber-400/70 transition-all duration-300">
+    <div className="text-2xl font-bold text-amber-400">60+</div>
+    <div className="text-gray-400 text-sm">Publications</div>
+  </div>
+</button>
+
           </div>
 
           {/* Achievements */}
@@ -129,17 +128,20 @@ export default function Hero(): JSX.Element {
 
         {/* ================= RIGHT SIDE ================= */}
         <div className="relative flex justify-center lg:justify-end">
-          <div
-            className="
-              relative 
-              w-[280px] md:w-[340px] lg:w-[380px] 
-              rounded-2xl
-              bg-white
-              -mt-20 /* moved up from mt-40 to mt-4 */
-              border-4 border-amber-400
-              shadow-xl
-            "
-          >
+    <div
+  className="
+    relative 
+    w-[280px] md:w-[340px] lg:w-[380px] 
+    rounded-2xl
+    bg-white
+    mt-2    /* small positive margin, moves image down */
+    border-4 border-amber-400
+    shadow-xl
+  "
+>
+
+
+
             <div className="rounded-xl overflow-hidden">
               <img
                 src="drprsimg.png"

@@ -1,6 +1,11 @@
-{/*import React from 'react';*/}
+import React, { useEffect } from 'react';
 
 export default function IntegrativeMedicine() {
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="relative min-h-screen bg-[#07080b] text-white overflow-hidden">
 

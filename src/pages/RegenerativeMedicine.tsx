@@ -1,6 +1,11 @@
-
+import React, { useEffect } from 'react';
 
 export default function RegenerativeMedicine() {
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="relative min-h-screen bg-[#07080b] text-white overflow-hidden">
 
@@ -82,8 +87,8 @@ export default function RegenerativeMedicine() {
           <p className="text-gray-300 text-lg leading-relaxed">
             Emphasis is placed on tissue-level restoration markers including
             structural organization, integrity of tissue planes, and restoration
-            patterns consistent with native micro-anatomical architecture —
-            beyond gross morphological recovery alone.
+            patterns consistent with native micro-anatomical architecture — beyond
+            gross morphological recovery alone.
           </p>
         </div>
 

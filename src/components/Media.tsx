@@ -119,8 +119,8 @@ export default function Media() {
                     <Newspaper size={24} className="text-black" />
                   </div>
                   <div>
-                    <p className="text-white font-semibold mb-1">The Lancet Opinion Editorial</p>
-                    <p className="text-gray-400 text-sm">Reimagining global healthcare delivery systems</p>
+                    <p className="text-white font-semibold mb-1">TV5 - Health Care</p>
+                    <p className="text-gray-400 text-sm">, Dr. Ravi Shankar Polisetty from SGP Hospitals gives clear, expert suggestions on how this approach supports better patient outcomes and the future of healthcare.</p>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const AIDeepLearning: React.FC = () => {
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="relative min-h-screen bg-[#06070a] text-white overflow-hidden">
 
@@ -73,7 +78,7 @@ const AIDeepLearning: React.FC = () => {
           </div>
 
           {/* BLOCK — GRID */}
-          <div className="bg-white/[0.035] backdrop-blur-xl border border-white/10 rounded-3xl p-10 md:p-14 shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
+          <div className="bg-white/[0.035] backdrop-blur-xl border border-white/10 rounded-2xl p-10 md:p-14 shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
             <h2 className="text-2xl font-serif text-amber-400 mb-10">
               What the AI Is Designed to Enable
             </h2>

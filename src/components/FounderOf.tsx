@@ -107,6 +107,7 @@ hover:shadow-[0_0_60px_rgba(196,181,253,0.45)]">
             <img src="/IPRISMlogo.png" className="h-20 w-auto mb-4 object-contain" />
 
             <h3 className="text-2xl font-bold text-white mb-4">I-PRISM</h3>
+              <b><p className="mb-5 font-semibold bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 bg-clip-text text-transparent">“An intelligent precision framework unifying data, biology, and personalized care.”</p></b>
             <p className="text-gray-300 mb-6">
             In a world where quality healthcare is often a luxury and modern medicine, while beneficial, can bring a host of side effects and temporary relief, we stand at a crossroads and bringing in institutionalized Poly Scientific Ayurveda.
             </p>
@@ -134,6 +135,7 @@ hover:shadow-[0_0_60px_rgba(134,239,172,0.45)]">
   <img src="/Novadigm-logo.png" className="h-16 w-auto mb-4 object-contain" />
 
  <br></br> <h3 className="text-2xl font-bold text-white mb-4">Novadigm</h3>
+ <b><p className="mb-5 font-semibold bg-gradient-to-r from-green-400 via-green-300 to-green-200 bg-clip-text text-transparent">“A new scientific paradigm shaping the future of integrated human health.”</p></b>
   <p className="text-gray-300 mb-6">
  Pioneering healthcare all-natural center dedicated to offering Poly Scientific Ayurveda (PRISM) treatments, redefining healthcare by merging ancient wisdom with modern innovation to cater the chronic diseases.
   </p>
@@ -161,6 +163,12 @@ hover:shadow-[0_0_60px_rgba(134,239,172,0.45)]">
             <img src="/Docture-poly-logo.png" className="h-16 w-auto mb-4 object-contain" />
 
             <h3 className="text-2xl font-bold text-white mb-4">Docture-Poly</h3>
+             <b>
+  <p className="mb-5 font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-pink-400 bg-clip-text text-transparent">
+    “A multi-modal clinical device enabling intelligent, poly-system medical intervention.”
+  </p>
+</b>
+
             <p className="text-gray-300 mb-6">
              Docture-Poly is a AI and ML based IoT device that effectively gives your VPK42Fingerprint, and offers personalized, smart, automated, and intelligent dietary, fitness, and herbal regimens; Docture-Poly also provides a non-invasive estimate of your blood biochemistry.
             </p>

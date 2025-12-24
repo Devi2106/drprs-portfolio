@@ -22,7 +22,6 @@ export default function About() {
       title: 'AI & Deep Learning',
       description: 'Digital health data intelligence & predictive analytics',
       route:'/ai-deep-learning',
-
     },
     {
       icon: Globe2,
@@ -133,10 +132,13 @@ export default function About() {
               <div
                 key={index}
                 onClick={() => item.route && navigate(item.route)}
-                className={`bg-white/5 backdrop-blur-sm border border-amber-500/20 rounded-2xl p-7
+                className={`relative bg-white/5 backdrop-blur-sm border border-amber-500/20 rounded-2xl p-7
                   hover:border-amber-500/50 hover:bg-white/10 transition-all duration-300 group
                   ${item.route ? 'cursor-pointer' : ''}`}
               >
+                {/* ===== Yellow line at the top ===== */}
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-t-2xl"></div>
+
                 <div className="w-14 h-14 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                   <Icon size={28} className="text-black" />
                 </div>

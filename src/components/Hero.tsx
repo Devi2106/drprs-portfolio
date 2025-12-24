@@ -112,6 +112,7 @@ export default function Hero(): JSX.Element {
   Meet Docture-Poly™
 </a>
 
+
           </div>
 
           {/* Discover More Button */}

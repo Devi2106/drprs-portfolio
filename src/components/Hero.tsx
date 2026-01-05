@@ -1,9 +1,9 @@
 import { Play, Sparkles, ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-export default function Hero(): JSX.Element {
-  const navigate = useNavigate();
 
+export default function Hero() {
+    const navigate = useNavigate(); 
   const scrollToAbout = () => {
     const aboutSection = document.querySelector("#about");
     if (aboutSection) {
@@ -11,155 +11,161 @@ export default function Hero(): JSX.Element {
     }
   };
 
-  const goToPatents = () => {
-    navigate("/patents");
-  };
-
-  const goToPublication = () => {
-    navigate("/publication");
-  };
-
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center bg-[#020617] text-white px-4 md:px-10 lg:px-16 py-6" // Reduced vertical padding here
+      className="relative min-h-screen flex flex-col bg-[#020617] text-white overflow-hidden"
     >
-     {/* Gradient Background */}
-<div className="absolute inset-0 bg-gradient-to-br from-black via-[#0a1530] to-black opacity-90"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-[#0a1530] to-black opacity-90"></div>
 
-<div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start w-full -mt-10">
-  {/* ================= LEFT SIDE ================= */}
-  <div className="space-y-4">
-    {/* Animated Badge */}
-    <div className="inline-flex items-center gap-3 px-5 py-2 mt-2 rounded-full bg-amber-400/15 border border-amber-400/40 animate-fade-in-up">
-      <Sparkles size={18} className="text-amber-400 animate-pulse" />
-      <span className="text-amber-400 text-sm font-semibold">
-        Where Science Becomes Possibility
-      </span>
+     {/* <nav className="relative z-20 flex items-center justify-between px-6 md:px-10 lg:px-16 py-6">
+        <div className="text-2xl md:text-3xl font-serif font-bold text-amber-400">
+          Dr. Polisetty
+        </div>
+
+        <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
+          <a href="#about" className="hover:text-amber-400 transition-colors">About</a>
+          <a href="#innovation" className="hover:text-amber-400 transition-colors">Innovation</a>
+          <a href="#vision" className="hover:text-amber-400 transition-colors">Vision</a>
+          <a href="#founder" className="hover:text-amber-400 transition-colors">Founder</a>
+          <a href="#thoughts" className="hover:text-amber-400 transition-colors">Thoughts</a>
+          <a href="#experience" className="hover:text-amber-400 transition-colors">Experience</a>
+          <a href="#awards" className="hover:text-amber-400 transition-colors">Awards</a>
+          <a href="#publications" className="hover:text-amber-400 transition-colors">Publications</a>
+          <a href="#contact" className="hover:text-amber-400 transition-colors">Contact</a>
+        </div>
+
+        <button className="hidden lg:block bg-amber-500 text-black px-6 py-2.5 rounded-full font-semibold hover:bg-amber-400 transition-all">
+          Connect
+        </button>
+
+        <button className="lg:hidden text-white">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </nav>*/}
+
+      <div className="relative z-10 flex-1 flex items-center px-6 md:px-10 lg:px-16 pb-20">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+          <div className="space-y-6">
+            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-amber-400/10 border border-amber-400/30 backdrop-blur-sm">
+              <Sparkles size={18} className="text-amber-400" />
+              <span className="text-amber-400 text-sm font-semibold">
+                Where Science Becomes Possibility
+              </span>
+            </div>
+
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+              Dr.Ravishankar <br />
+              <span className="text-amber-400">Polisetty</span>
+            </h1>
+
+            <p className="text-lg md:text-xl text-gray-300 font-medium">
+              Visionary Surgeon | Scientific Innovator | Healthcare Futurist
+            </p>
+
+            <blockquote className="italic text-base md:text-lg text-gray-400 border-l-4 border-amber-400 pl-5 py-2 max-w-2xl leading-relaxed">
+              Transforming human health by uniting Ancient Wisdom & Modern Science
+              into a future where disease can be predicted, prevented, and reversed.
+            </blockquote>
+
+
+           <div className="flex flex-wrap gap-4 pt-2">
+              <div  onClick={() => navigate("/patents")} className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border-2 border-amber-400/40  rounded-2xl px-6 py-4 min-w-[120px] hover:border-amber-400/60 hover:shadow-lg hover:shadow-amber-400/20 transition-all duration-300 cursor-pointer">
+                <div className="text-3xl md:text-4xl font-bold text-amber-400">40+</div>
+                <div className="text-gray-300 text-sm font-medium mt-1">Patents</div>
+              </div>
+              
+
+
+              <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border-2 border-amber-400/40 rounded-2xl px-6 py-4 min-w-[120px] hover:border-amber-400/60 hover:shadow-lg hover:shadow-amber-400/20 transition-all duration-300">
+                <div className="text-3xl md:text-4xl font-bold text-amber-400">30+</div>
+                <div className="text-gray-300 text-sm font-medium mt-1">Years Research</div>
+              </div>
+
+              <div  onClick={() => navigate("/publication")} className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border-2 border-amber-400/40 rounded-2xl px-6 py-4 min-w-[120px] hover:border-amber-400/60 hover:shadow-lg hover:shadow-amber-400/20 transition-all duration-300 cursor-pointer">
+                <div className="text-3xl md:text-4xl font-bold text-amber-400">60+</div>
+                <div className="text-gray-300 text-sm font-medium mt-1">Publications</div>
+              </div>
+            </div>
+
+            <div className="space-y-2.5 pt-2 text-gray-300 text-sm md:text-base">
+              <div className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✦</span>
+                <p>Awarded by Dr APJ Abdul Kalam</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✦</span>
+                <p>Vice-Chair (Precision Medicine), EICBI Brussels 2024</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5">✦</span>
+                <p>Creator of Docture-Poly™ World's First Clinical Decision making Agent and Non-Invasive OMICS Tracker</p>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-4 pt-4">
+              <a
+                href="#about"
+                className="bg-amber-500 text-black px-6 py-3 rounded-full text-base font-bold hover:bg-amber-400 transition-all shadow-lg shadow-amber-500/30 hover:shadow-xl hover:shadow-amber-500/40"
+              >
+                Explore His Journey
+              </a>
+
+              <a
+                href="https://docture-poly.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-amber-500 text-amber-400 px-6 py-3 rounded-full text-base font-bold hover:bg-amber-500 hover:text-black transition-all flex items-center gap-2 shadow-lg shadow-amber-500/20 hover:shadow-xl hover:shadow-amber-500/30"
+              >
+                <Play size={18} />
+                Meet Docture-Poly™
+              </a>
+            </div>
+          </div>
+
+         <div className="relative flex justify-center lg:justify-end">
+  <div className="relative w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px]">
+
+    {/* WHITE BACKGROUND WRAPPER */}
+   <div className="rounded-[30px] border-[6px] border-amber-500 shadow-2xl shadow-amber-400/30">
+
+   <div className="relative bg-white rounded-[24px] overflow-hidden">
+
+        <img
+          src="drprsimg.png"
+          alt="Dr. Ravishankar Polisetty"
+          className="w-full h-auto object-cover bg-white"
+        />
+
+        {/* TOP TAG */}
+        <div className="absolute top-4 right-4 bg-black/70 text-amber-300 px-4 py-2 rounded-full text-xs md:text-sm font-semibold backdrop-blur-md border border-amber-400/50 shadow-lg">
+          Global Impact — 5 Continents
+        </div>
+
+        {/* BOTTOM TAG */}
+        <div className="absolute bottom-4 left-4 bg-black/70 text-blue-300 px-4 py-2 rounded-full text-xs md:text-sm font-semibold backdrop-blur-md border border-blue-400/50 shadow-lg">
+          30+ Years Translational Research
+        </div>
+      </div>
     </div>
 
-
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-snug text-white">
-  Dr.Ravishankar <br />
-  <span className="text-amber-400">Polisetty</span>
-</h1>
-
-
-          {/* Subtitle */}
-          <p className="text-lg md:text-base text-gray-300">
-            Visionary Surgeon | Scientific Innovator | Healthcare Futurist
-          </p>
-
-          {/* Blockquote */}
-          <blockquote className="italic text-base md:text-lg text-gray-400 border-l-4 border-amber-400 pl-5 max-w-lg leading-snug">
-            Transforming human health by uniting Ancient Wisdom & Modern Science
-            into a future where disease can be predicted, prevented, and reversed.
-          </blockquote>
-
-          {/* Stats Row */}
-          <div className="flex flex-wrap gap-3 pt-1">
-            <button onClick={goToPatents}>
-  <div className="bg-white/5 border border-amber-400/40 rounded-xl px-6 py-3 min-w-[100px] 
-                  shadow-md shadow-amber-400/50 hover:shadow-lg hover:shadow-amber-400/70 transition-all duration-300">
-    <div className="text-2xl font-bold text-amber-400">40+</div>
-    <div className="text-gray-400 text-sm">Patents</div>
   </div>
-</button>
+</div>
 
-           
-
-            <div className="bg-white/5 border border-amber-400/30 rounded-xl px-6 py-3 min-w-[110px]">
-              <div className="text-2xl md:text-3xl font-bold text-amber-400">
-                30+
-              </div>
-              <div className="text-gray-400 text-sm md:text-base">Years Research</div>
-            </div>
-
-           <button onClick={goToPublication}>
-  <div className="bg-white/5 border border-amber-400/40 rounded-xl px-6 py-3 min-w-[100px] 
-                  shadow-md shadow-amber-400/50 hover:shadow-lg hover:shadow-amber-400/70 transition-all duration-300">
-    <div className="text-2xl font-bold text-amber-400">60+</div>
-    <div className="text-gray-400 text-sm">Publications</div>
-  </div>
-</button>
-
-          </div>
-
-          {/* Achievements */}
-          <div className="space-y-1 pt-0 text-gray-400 text-sm md:text-base">
-            <p>✨ Awarded by Dr APJ Abdul Kalam</p>
-            <p>✨ Vice-Chair (Precision Medicine), EICBI Brussels 2024</p>
-            <p>
-              ✨ Creator of Docture-Poly™ World's First Clinical Decision making
-              Agent and Non-Invasive OMICS Tracker
-            </p>
-          </div>
-
-          {/* Buttons */}
-          <div className="flex flex-wrap gap-3 pt-0 relative">
-           <a
-  href="#about"
-  className="bg-amber-500 text-black px-4 py-2.5 rounded-full text-sm md:text-base font-semibold hover:bg-amber-400 transition-all"
->
-  Explore His Journey
-</a>
-
-        <a
-  href="https://saigangapanakeia.in/home/docturepoly"
-  className="border border-amber-500 text-amber-400 px-4 py-2.5 rounded-full text-sm md:text-base font-semibold hover:bg-amber-500 hover:text-black transition-all flex items-center gap-2"
->
-  <Play size={16} />
-  Meet Docture-Poly™
-</a>
-
-
-          </div>
-
-          {/* Discover More Button */}
-          <div className="absolute bottom-[-36px] left-1/2 -translate-x-1/2 animate-bounce z-20">
-            <button
-              onClick={scrollToAbout}
-              className="flex flex-col items-center text-gray-300 hover:text-amber-400 transition-colors"
-            >
-              <span className="text-xs mb-1">Discover More</span>
-              <ChevronDown className="w-5 h-5" />
-            </button>
-          </div>
         </div>
+      </div>
 
-        {/* ================= RIGHT SIDE ================= */}
-        <div className="relative flex justify-center lg:justify-end">
-    <div
-  className="
-    relative 
-    w-[280px] md:w-[340px] lg:w-[380px] 
-    rounded-2xl
-    bg-white
-    mt-2    /* small positive margin, moves image down */
-    border-4 border-amber-400
-    shadow-xl
-  "
->
-
-
-
-            <div className="rounded-xl overflow-hidden">
-              <img
-                src="drprsimg.png"
-                alt="Dr. Ravishankar Polisetty"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Tags */}
-            <div className="absolute top-3 right-3 bg-black/50 text-amber-300 px-3 py-1 rounded-full text-sm backdrop-blur-md border border-amber-400/50">
-              Global Impact — 5 Continents
-            </div>
-            <div className="absolute bottom-3 left-3 bg-black/50 text-blue-300 px-3 py-1 rounded-full text-sm backdrop-blur-md border border-blue-400/50">
-              30+ Years Translational Research
-            </div>
-          </div>
-        </div>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+        <button
+          onClick={scrollToAbout}
+          className="flex flex-col items-center text-gray-300 hover:text-amber-400 transition-colors group"
+        >
+          <span className="text-xs font-medium mb-1 group-hover:text-amber-400">Discover More</span>
+          <ChevronDown className="w-6 h-6" />
+        </button>
       </div>
     </section>
   );

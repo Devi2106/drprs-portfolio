@@ -20,6 +20,8 @@ import AIDeepLearning from './pages/AIDeepLearning';
 import IntegrativeMedicine from './pages/IntegrativeMedicine';
 import Patents from './pages/Patents';
 import Publication from './pages/Publication';
+import PremiumCard from './pages/PremiumCard.tsx';
+
 
 
 
@@ -91,6 +93,11 @@ function App() {
   path="/publication"
   element={<Publication />}
 />
+<Route
+  path="/premiumcard"
+  element={<PremiumCard />}
+/>
+
   </Routes>
 );
 

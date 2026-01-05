@@ -79,12 +79,12 @@ export default function Media() {
                   " Dr. Ravi Shankar Polisetty shares his vision behind the I-PRISM Medicine Course, a groundbreaking academic initiative developed in collaboration with IIT Hyderabad."
                 </p>
               </div>
-              <div className="border-l-4 border-purple-500 pl-6 py-4">
+            {/*}  <div className="border-l-4 border-purple-500 pl-6 py-4">
                 <p className="text-purple-400 font-semibold mb-2">MIT Technology Review</p>
                 <p className="text-gray-300">
                   "Integration of ancient Ayurveda with AI represents the future of personalized medicine"
                 </p>
-              </div>
+              </div>*/}
             </div>
           </div>
 

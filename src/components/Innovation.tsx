@@ -96,7 +96,7 @@ export default function Innovation() {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://saigangapanakeia.in/home/docturepoly"
+                href="https://docture-poly.com/"
                 className="bg-gradient-to-r from-amber-500 to-yellow-600 text-black px-8 py-4 rounded-full font-semibold hover:shadow-2xl hover:shadow-amber-500/50 transition-all duration-300 text-center"
               >
                 Meet Docture-Poly™

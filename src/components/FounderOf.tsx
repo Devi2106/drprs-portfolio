@@ -24,12 +24,24 @@ export default function FounderOf() {
           transition-all duration-500 hover:-translate-y-2
           hover:shadow-[0_0_60px_rgba(25,181,216,0.45)]">
 
+
             <img src="/SGPlogo.png" className="h-16 w-auto mb-4 object-contain" />
 
-            <h3 className="text-2xl font-bold text-white mb-4">SGP</h3>
-            <p className="text-gray-300 mb-6">
-              SGP develops cutting-edge medical technologies integrating modern medicine and Ayurveda.
-            </p>
+            <h3 className="text-2xl font-bold text-white mb-4">Sai Ganga Panakeia</h3>
+<br></br>
+
+<b>
+   <p className="mb-5 font-semibold bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-200 bg-clip-text text-transparent">
+    “A New Health Civilization — Science, Nature, and Technology in One System.”
+  </p>
+</b>
+
+<p className="text-gray-300 mb-6">
+  The SGP Group integrates modern medicine with ancient Ayurvedic wisdom to create natural, non-invasive solutions that restore balance and promote holistic well-being. By combining research, technology, and traditional knowledge, we aim to redefine the future of healthcare for every individual.
+</p>
+
+<br></br>
+
 
             <a
               href="https://saigangapanakeia.in"
@@ -52,13 +64,26 @@ export default function FounderOf() {
 
             <img src="/SGP-Manufacturing-logo.png" className="h-16 w-auto mb-4 object-contain" />
 
-            <h3 className="text-2xl font-bold text-white mb-4">SGP-Manufacturing</h3>
-            <p className="text-gray-300 mb-6">
-              Manufacturing arm focused on Poly Scientific Ayurveda healthcare solutions.
-            </p>
+           <br></br>
+
+<h3 className="text-2xl font-bold text-white mb-4">SGP Precision Manufacturing</h3>
+
+<b>
+  <p className="mb-5 font-semibold bg-gradient-to-r from-yellow-400 via-orange-300 to-red-200 bg-clip-text text-transparent">
+ 
+    “Building the Biological and Digital Infrastructure of Next-Generation Healthcare.”
+  </p>
+</b>
+
+<p className="text-gray-300 mb-6">
+  SGP Precision Manufacturing is the engineering backbone of the SGP / Novadigm ecosystem. We design and produce advanced herbal formulations, medical-grade IoT devices, and intelligent robotic systems that translate biological insight into scalable, clinically aligned solutions.
+</p>
+
+<br></br>
+
 
             <a
-              href="https://saigangapanakeia.in"
+              href="https://novadigm.tech/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-medium
@@ -78,14 +103,25 @@ transition-all duration-500 hover:-translate-y-2
 hover:shadow-[0_0_60px_rgba(196,181,253,0.45)]">
 
   <img src="/SGP-Research-logo.png" className="h-16 w-auto mb-4 object-contain" />
+  <h3 className="text-2xl font-bold text-white mb-4">SGP Research </h3>
 
-  <h3 className="text-2xl font-bold text-white mb-4">SGP-Research</h3>
-  <p className="text-gray-300 mb-6">
-    Translational research bridging Ayurveda and modern medical science.
+ <br></br>
+
+<b>
+  <p className="mb-5 font-semibold bg-gradient-to-r from-purple-400 via-pink-300 to-red-200 bg-clip-text text-transparent">
+    “Building a healthier India where physical, mental, and social well-being converge through science, tradition, and community action.”
   </p>
+</b>
+
+<p className="text-gray-300 mb-6">
+  At Novadigm, we are advancing rigorous fundamental and translational research in Ayurveda, addressing social determinants of health, and driving meaningful reforms in public health. Our purpose is to integrate holistic wellness with evidence-based innovation, ensuring every individual has the opportunity for a vibrant and healthy life.
+</p>
+
+<br></br>
+
 
   <a
-    href="https://saigangapanakeia.in"
+    href="https://novadigmresearch.com/"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center text-sm font-medium
@@ -174,7 +210,7 @@ hover:shadow-[0_0_60px_rgba(134,239,172,0.45)]">
             </p>
 
             <a
-              href="https://saigangapanakeia.in/home/docturepoly"
+              href="https://docture-poly.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-medium

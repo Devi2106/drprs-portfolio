@@ -145,9 +145,7 @@ export default function PremiumCard() {
           >
             Request VIP Consultation
           </button>
-          <button className="px-10 py-4 rounded-full border border-amber-400/60 text-amber-400 hover:bg-amber-400 hover:text-black hover:scale-[1.05] transition duration-300">
-            Private Inquiry
-          </button>
+         
         </div>
 
         {/* ===== VIP FORM MODAL ===== */}

@@ -45,8 +45,6 @@ export default function FounderOf() {
 
             <a
               href="https://saigangapanakeia.in"
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-medium
               text-[#19B5D8] border border-[#19B5D8]/50 px-5 py-2 rounded-full
              opacity-100 transition-all duration-300
